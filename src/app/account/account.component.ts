@@ -1,9 +1,9 @@
-import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: "app-account",
-  templateUrl: "./account.component.html",
-  styleUrls: ["./account.component.css"]
+  selector: 'app-account',
+  templateUrl: './account.component.html',
+  styleUrls: ['./account.component.css'],
 })
 export class AccountComponent {
   @Input() account: { name: string; status: string };
@@ -15,6 +15,6 @@ export class AccountComponent {
 
   onSetTo(status: string) {
     this.statusChanged.emit({ id: this.id, newStatus: status });
-    console.log(`Status changed for "${this.account.name}", new status is: "${status}"`);
+    console.log(`A status change occured, the new status is ${status}`);
   }
 }
