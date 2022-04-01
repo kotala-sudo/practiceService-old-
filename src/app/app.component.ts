@@ -17,7 +17,7 @@ export class AppComponent {
     },
     {
       name: 'Hidden Account',
-      status: 'hidden',
+      status: 'unknown',
     },
   ];
 
