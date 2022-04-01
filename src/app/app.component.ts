@@ -1,24 +1,24 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   accounts = [
     {
-      name: "Master Account",
-      status: "active"
+      name: 'Master Account',
+      status: 'active',
     },
     {
-      name: "Test Account",
-      status: "inactive"
+      name: 'Test Account',
+      status: 'inactive',
     },
     {
-      name: "Hidden Account",
-      status: "unknown"
-    }
+      name: 'Hidden Account',
+      status: 'hidden',
+    },
   ];
 
   onAccountAdded(newAccount: { name: string; status: string }) {
